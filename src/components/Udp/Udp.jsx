@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Component } from 'react';
 import axios from 'axios';
 import './Udp.css'
-
+import {useNavigate, Link, Navigate} from "react-router-dom"
 const Udp = () => {
     var testobj ={
         destport:"value",
@@ -12,6 +12,7 @@ const Udp = () => {
         checksum:"value",
         checksum1:"value"
     }
+    const navigate = useNavigate();
     const [value, setValue]= useState();
     const [valueTo, setValueTo]= useState();
     const [value2, setValue2]= useState();
@@ -35,6 +36,7 @@ const Udp = () => {
         
         const res = await response.json()
         console.log(res);
+        navigate("/DataAnalyzerLoading")
     }  
   return (
     <div className="gpt3__header-content__input">
@@ -48,6 +50,7 @@ const Udp = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text"
             placeholder='ValueFrom'
             value={value}
@@ -68,7 +71,7 @@ const Udp = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
             <input type="text"
             placeholder='ValueFrom'
             value={value2}
@@ -88,7 +91,7 @@ const Udp = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text"
             placeholder='ValueFrom'
             value={value3}
