@@ -13,7 +13,7 @@
     margin-right: 5rem;
 }
 
-.gpt3__title{
+.gpt3__title {
     font-size: clamp(3rem, 15vmin, 8rem);
     font-family: sans-serif;
     color: rgb(243, 242, 242);
@@ -21,6 +21,16 @@
     font-weight: bold;
     text-indent: 5px;
 }
+
+.gpt3__title2 {
+    font-size: clamp(3rem, 15vmin, 8rem);
+    font-family: sans-serif;
+    color: rgb(242, 242, 243);
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 5px;
+}
+
 .gpt3__header-content__input input {
     flex: 2;
     width: 24%;
@@ -38,11 +48,84 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-element{
+
+.fieldcontent input {
+    content: "\a";
+    white-space: pre;
+    flex: 2;
+    width: 24%;
+    min-height: 200px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    border-radius: 7px;
+    padding: 0 1rem;
+    padding-bottom: 140px;
+    outline: none;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-all !important;
+    resize: vertical !important;
+}
+.fieldcontent2 textarea {
+    content: "\a";
+    white-space: pre;
+    flex: 2;
+    width: 24%;
+    min-height: 200px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    border-radius: 7px;
+    padding: 0 1rem;
+    padding-bottom: 140px;
+    outline: none;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-all !important;
+    resize: vertical !important;
+}
+
+
+
+element {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
 .gpt3__header-content__input button {
+    flex: 0.6;
+    width: 10%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.buttongpt button{
     flex: 0.6;
     width: 10%;
     min-height: 50px;
@@ -85,7 +168,8 @@ element{
     color: #fff;
     text-align: center;
 }
-.gpt3__header-content h1{
+
+.gpt3__header-content h1 {
     font-family: var(--font-family);
 }
 
@@ -121,7 +205,7 @@ element{
         font-size: 16px;
         line-height: 24px;
     }
-    
+
     .gpt3__header-content__people {
         flex-direction: column;
     }

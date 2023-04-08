@@ -27,7 +27,7 @@ const Form = (props) => {
     const a = props.data
 
     const body = {a}
-    const response =  await fetch('http://localhost:5000/api', {
+    const response =  await fetch(`http://localhost:5000/${props.apiendpoint}`, {
       method: 'POST',
       headers: { "content-type": "application/json"},
       body: JSON.stringify(body)

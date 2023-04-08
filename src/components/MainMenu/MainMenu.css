@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+.button1{
+    flex: 0.6;
+    width: 20%;
+    position: relative;
+    right:180px;
+    bottom:-300px;
+    min-height: 50px;
+    font-family: 'OSWALD';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    text-indent: 5px;
+    border-top-right-radius: 5px;
+    Border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0;
+    animation-name: fadeIn2;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+.main-menu-text {
+    font-family: 'OSWALD';
+    position: relative;
+    left: 630px;
+    bottom: -200px;
+    font-size: 90px;
+    color: #ff6106;
+    opacity: 0;
+    /* start with 0 opacity */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    /* delay the animation by 1 second */
+    animation-fill-mode: forwards;
+    /* keep the opacity at 1 after animation ends */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main2 {
+    font-family: 'OSWALD';
+    position: relative;
+    bottom: -250px;
+    left: 170px;
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 0;
+    animation-name: fadeIn2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

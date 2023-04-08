@@ -1,0 +1,36 @@
+.white-box {
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .calculate-button {
+    background: rgb(5, 0, 100);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 100;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .calculate-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .chart-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  
